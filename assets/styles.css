@@ -1,0 +1,15 @@
+/****** General ***********/
+* {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', serif;
+}
+
+:root {
+    --main-color: #9356DC;
+    --blue: #003A68;
+    --light-blue: #89C8FA;
+    --second-color: #FF79DA;
+    --third-color: #99E2D0;
+    --green-font: #008766;
+    --bg-color: #fcc0ce;
+}
