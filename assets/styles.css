@@ -1,15 +1,50 @@
 /****** General ***********/
-* {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Shrikhand', serif;
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #EAEAEA;
+    width: 100%;
 }
 
-:root {
-    --main-color: #9356DC;
-    --blue: #003A68;
-    --light-blue: #89C8FA;
-    --second-color: #FF79DA;
-    --third-color: #99E2D0;
-    --green-font: #008766;
-    --bg-color: #fcc0ce;
+.location {
+    display: flex;
+    align-items: center;
+    position: relative;
 }
+
+.location > .input-field {
+    background-color: #EAEAEA;
+    flex: 1;
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+
+.input-field {
+    flex: 1;
+    text-align: center;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.input-field::placeholder {
+    color: #353535;
+    opacity: 1;
+}
+
+.location i {
+    position: absolute;
+}
+
+.fa-solid {
+    color: #353535;
+    font-size: 14px;
+    margin-right: 5px;
+}
+

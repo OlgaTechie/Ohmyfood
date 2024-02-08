@@ -7,24 +7,62 @@
     <title>Ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="sass/main.scss">
+    <link rel="stylesheet" href="sass/variables.scss">
+    <link rel="stylesheet" href="sass/homepage.scss">
+    <link rel="stylesheet" href="sass/restaurants.scss">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div class="header__container">
+            <i class="fa-solid fa-arrow-left"></i>
+            <img src="assets/images/logo/ohmyfood.png" alt="logo du ohmyfood">
+        </div>
+        <form action="#" method="get">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" class="input-field" name="location" placeholder="Paris, Belleville">
+            </div>
+        </form>
+    </header>
 
     <main>
         <section class="hero-section">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button></button>
+            <button class="hero-section__button">Explorer nos restaurants</button>
         </section>
-        <div class="fonctionnement">
-            <button></button>
-            <button></button>
-            <button></button>
-        </div>
+
+        <section class="fonctionnement">
+            <span class="fonctionnement__label">Fonctionnement</span>
+            <div class="fonctionnement-buttons">
+                <div class="button-container">
+                    <div class="button-container--number">1</div>
+                    <button class="fonctionnement__button"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</button>  
+                </div>
+                <div class="button-container">
+                    <div class="button-container--number">2</div>
+                    <button class="fonctionnement__button"><i class="fa-solid fa-list-ul"></i>Composez votre menu</button>
+                </div>
+                <div class="button-container">
+                    <div class="button-container--number">3</div>
+                    <button class="fonctionnement__button"><i class="fa-solid fa-store"></i>Dégustez au restaurant</button>
+                </div>   
+            </div>
+        </section>
+
         <div class="restaurants"></div>
     </main>
 
