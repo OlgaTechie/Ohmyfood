@@ -1,0 +1,287 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header .header__container .header__container--arrow {
+  display: none;
+}
+header .header__container img {
+  width: 40%;
+  padding: 14px 70px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #EAEAEA;
+  width: 100%;
+}
+form .location {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+form .location i {
+  position: absolute;
+  color: #353535;
+  font-size: 14px;
+  margin-right: 5px;
+}
+form .location .input-field {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  color: #353535;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 0;
+}
+
+.input-field::placeholder {
+  color: #353535;
+  opacity: 1;
+}
+
+.location > .input-field {
+  background-color: #EAEAEA;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 20px;
+  margin: 0;
+}
+.hero-section h1 {
+  font-size: 24px;
+}
+.hero-section p {
+  font-size: 18px;
+}
+.hero-section .hero-section__button {
+  color: white;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 13px 18px;
+  font-size: 16px;
+  margin: 20px 30px 30px;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.fonctionnement .fonctionnement__label {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+}
+.fonctionnement .fonctionnement-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fonctionnement .fonctionnement-buttons .button-container {
+  position: relative;
+  margin: 20px;
+  display: inline-block;
+}
+.fonctionnement .fonctionnement-buttons .button-container .button-container--number {
+  position: absolute;
+  left: -5%;
+  bottom: 32%;
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+.fonctionnement .fonctionnement-buttons .button-container .fonctionnement__button {
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #F6F6F6;
+  padding: 14px 50px 14px 19px;
+  height: 72px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border: 3px #D9D9D9;
+}
+.fonctionnement .fonctionnement-buttons .button-container .fonctionnement__button .fa-solid {
+  color: #7E7E7E;
+  padding-left: 18px;
+  padding-right: 20px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  margin-top: 40px;
+}
+.restaurants .restaurants__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding-top: 40px;
+}
+.restaurants .restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 17px;
+}
+
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: white;
+  text-decoration: none;
+  flex: 1;
+}
+.restaurant__card .restaurant__card--image {
+  position: relative;
+}
+.restaurant__card .restaurant__card--image .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 14px;
+  border-radius: 2px;
+  height: 29px;
+  width: 80px;
+  color: #008766;
+  background-color: #99E2D0;
+  right: 3%;
+  top: 5%;
+}
+.restaurant__card .restaurant__card--image img {
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 231px;
+  width: 100%;
+}
+.restaurant__card .restaurant__card--content {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  color: black;
+}
+.restaurant__card .restaurant__card--content .content-txt {
+  flex-direction: column;
+  padding: 8px 13px;
+  text-decoration: none;
+}
+.restaurant__card .restaurant__card--content .content-txt h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.restaurant__card .restaurant__card--content .content-txt p {
+  font-size: 17px;
+  margin-top: 5px;
+}
+.restaurant__card .restaurant__card--content .card-like {
+  position: absolute;
+  border: 1px;
+  right: 5%;
+  bottom: 40%;
+  font-size: 22px;
+}
+
+.hero-section__button {
+  color: white;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 13px 18px;
+  font-size: 16px;
+  margin: 20px 30px 30px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.title {
+  font-family: "Shrikhand", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__container--arrow {
+  padding: 17px;
+  font-size: 30px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background-color: #353535;
+  padding: 22px 25px;
+}
+.footer-section .title {
+  font-size: 18px;
+  color: white;
+}
+.footer-section .links {
+  display: flex;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+.footer-section ul li {
+  padding-top: 7px;
+  font-size: 16px;
+}
+.footer-section ul li a {
+  color: white;
+}
+.footer-section ul li .fa-solid {
+  padding-right: 10px;
+}
+.footer-section ul li .fa-solid.fa-utensils {
+  font-size: 13px;
+}
+.footer-section ul li .fa-solid.fa-handshake-angle {
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

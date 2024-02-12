@@ -1,0 +1,44 @@
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-color: #353535;
+    padding: 22px 25px;
+
+    .title {
+        font-size: 18px;
+        color: white;
+    }
+
+    .links {
+        display: flex;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 16px 0;
+
+        li {
+            padding-top: 7px;
+            font-size: 16px;
+
+            a {
+                color: white;
+            }
+    
+            .fa-solid {
+                padding-right: 10px;
+    
+                &.fa-utensils {
+                    font-size: 13px;
+                }
+    
+                &.fa-handshake-angle {
+                    font-size: 10px;
+                }  
+            }
+        }   
+    }
+}
