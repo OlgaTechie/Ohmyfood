@@ -1,0 +1,30 @@
+.image-menu {
+    object-fit: cover;
+    height: 275px;
+    width: 100%;
+}
+
+.menu {
+    background-color: #F6F6F6;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: absolute;
+    top: 315px;
+}
+
+.menu-title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    .title {
+        font-size: 28px;
+        padding-left: 17px;
+    }
+
+    .card-like {
+        position: absolute;
+        right: 10%;
+        bottom: 30%;
+    }
+}

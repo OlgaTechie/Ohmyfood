@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &--arrow {
+            display: none;
+            font-size: 30px;
+        }
+    
+        img {
+            width: 40%;
+            padding: 14px 70px;
+        }
+    }
+}
+
+.header-restaurants {
+    display: flex;
+    flex-direction: row;
+
+    .header__container--arrow {
+        display: flex;
+        padding-left: 7px;
+
+        a {
+            color: #353535;
+        }
+    }
+}
