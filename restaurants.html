@@ -7,7 +7,7 @@
     <title>Ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -26,19 +26,19 @@
 
     <main>
         <img class="image-menu" src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du plat de menu La palette du gout">
-        <section class="menu">
+        <section class="restaurant-menu">
             <div class="menu-title">
                 <div class="title">La palette du goût</div>
                 <div class="card-like">
                     <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
-            <div class="entrees">
-                <span class="entrees__label">ENTRÉES</span>
-                <div class="entrees-buttons">
+            <div class="menu-entrees">
+                <div class="menu__label">ENTRÉES</div>
+                <div class="menu-buttons">
                     <div class="button-container">
                         <div class="button-container--price">25<span class="euro">€</span></div>
-                        <button class="entrees__button">
+                        <button class="menu__button">
                             <div class="content-txt">
                                 <span class="titre">Fricassée d'escargots</span>
                                 <span class="sous-titre">Au piment d'Esplette</span>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="button-container">
                         <div class="button-container--price">35<span class="euro">€</span></div>
-                        <button class="entrees__button">
+                        <button class="menu__button">
                             <div class="content-txt">
                                 <span class="titre">Foie gras de canard mi-cuit</span>
                                 <span class="sous-titre">Et ses copeaux de truffe noire</span>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="button-container">
                         <div class="button-container--price">20<span class="euro">€</span></div>
-                        <button class="entrees__button">
+                        <button class="menu__button">
                             <div class="content-txt">
                                 <span class="titre">Œuf au plat</span>
                                 <span class="sous-titre">Assaisonné à la truffe sur lit de caviar</span>
@@ -65,8 +65,73 @@
                     </div>   
                 </div>
             </div>
-            <div class="plats"></div>
-            <div class="desserts"></div>
+            <div class="menu-plats">
+                <div class="menu__label">PLATS</div>
+                <div class="menu-buttons">
+                    <div class="button-container">
+                        <div class="button-container--price">40<span class="euro">€</span></div>
+                        <button class="menu__button">
+                            <div class="content-txt">
+                                <span class="titre">Filet de bœuf aux herbes</span>
+                                <span class="sous-titre">Accompagné de sa ribambelle de légumes</span>
+                            </div>
+                        </button>  
+                    </div>
+                    <div class="button-container">
+                        <div class="button-container--price">35<span class="euro">€</span></div>
+                        <button class="menu__button">
+                            <div class="content-txt">
+                                <span class="titre">Parmentier de queue de bœuf</span>
+                                <span class="sous-titre">À la truffe noire sur sa purée de panais</span>
+                            </div>
+                        </button>  
+                    </div>
+                    <div class="button-container">
+                        <div class="button-container--price">44<span class="euro">€</span></div>
+                        <button class="menu__button">
+                            <div class="content-txt">
+                                <span class="titre">Filet de turbot</span>
+                                <span class="sous-titre">Aux agrumes</span>
+                            </div>
+                        </button>  
+                    </div>   
+                </div>
+            </div>
+            <div class="menu-desserts">
+                <div class="menu__label">DESSERTS</div>
+                <div class="menu-buttons">
+                    <div class="button-container">
+                        <div class="button-container--price">18<span class="euro">€</span></div>
+                        <button class="menu__button">
+                            <div class="content-txt">
+                                <span class="titre">Paris-Brest</span>
+                                <span class="sous-titre">Revisité</span>
+                            </div>
+                        </button>  
+                    </div>
+                    <div class="button-container">
+                        <div class="button-container--price">22<span class="euro">€</span></div>
+                        <button class="menu__button">
+                            <div class="content-txt">
+                                <span class="titre">Macaron au chocolat d'exception</span>
+                                <span class="sous-titre">Et glace à la vanille de Madagascar</span>
+                            </div>
+                        </button>  
+                    </div>
+                    <div class="button-container">
+                        <div class="button-container--price">23<span class="euro">€</span></div>
+                        <button class="menu__button">
+                            <div class="content-txt">
+                                <span class="titre">Mousse au chocolat</span>
+                                <span class="sous-titre">Au piment d'Espelette et à la truffe noire</span>
+                            </div>
+                        </button>  
+                    </div>   
+                </div>
+            </div>
+            <div class="commander-section">
+                <button class="commander__button">Commander</button>
+            </div>
         </section>
     </main>
 

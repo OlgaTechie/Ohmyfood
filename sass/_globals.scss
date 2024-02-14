@@ -2,7 +2,6 @@
 body {
     font-family: $font-principal;
     margin: 0;
-    position: relative;
 }
 
 .title {
@@ -17,3 +16,28 @@ a {
     padding: 17px;
     font-size: 30px;
 }
+
+.fonctionnement,
+.menu-entrees,
+.menu-plats,
+.menu-desserts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    .fonctionnement__label {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    .menu__label {
+        display: block;
+        font-size: 16px;
+        margin: 10px;
+        border-bottom: 3px solid $thirdColor;
+        width: 40px;
+        padding-bottom: 5px;
+    }
+}
+
