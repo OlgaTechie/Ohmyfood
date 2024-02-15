@@ -8,6 +8,7 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        width: 100%;
 
         &--arrow {
             display: none;
@@ -17,6 +18,8 @@ header {
         img {
             width: 40%;
             padding: 14px 70px;
+            display: flex;
+            justify-content: center;
         }
     }
 }
@@ -32,5 +35,28 @@ header {
         a {
             color: #353535;
         }
+    }
+
+    img {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/****** Media queries ***********/
+
+@media screen and (min-width: 1024px) {
+    .header-restaurants {
+
+        .header__container--arrow {
+            display: flex;
+            padding-left: 3px;
+            font-size: 50px;
+            }
+
+        img {
+            margin: 0 auto;
+        }
+    
     }
 }

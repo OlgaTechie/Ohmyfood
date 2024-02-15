@@ -151,3 +151,21 @@ form {
         }
     }
 }
+
+/****** Media queries ***********/
+
+@media screen and (min-width: 1024px) {
+    .restaurants {
+        padding: 0 180px 20px 180px;
+
+        .restaurants__cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            a {
+                flex: 45% 0 0;
+            }
+        }
+    }
+}

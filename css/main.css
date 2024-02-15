@@ -135,6 +135,20 @@ form .location .input-field {
   font-size: 24px;
 }
 
+/****** Media queries ***********/
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 0 180px 20px 180px;
+  }
+  .restaurants .restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurants .restaurants__cards a {
+    flex: 45% 0 0;
+  }
+}
 .hero-section__button,
 .commander__button {
   color: white;
@@ -241,6 +255,25 @@ form .location .input-field {
   padding-top: 5px;
 }
 
+/****** Media queries ***********/
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 180px;
+  }
+  .fonctionnement .fonctionnement-buttons {
+    flex-direction: row;
+  }
+  .menu-section {
+    margin: 20px 180px;
+  }
+  .menu-section .menu-entrees,
+  .menu-section .menu-plats {
+    margin-bottom: 20px;
+  }
+}
 .image-menu {
   object-fit: cover;
   height: 275px;
@@ -273,6 +306,29 @@ form .location .input-field {
   font-size: 24px;
 }
 
+/****** Media queries ***********/
+@media screen and (min-width: 1024px) {
+  .restaurant-menu {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    width: 80%;
+  }
+  .restaurant-menu .menu-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .restaurant-menu .menu-title .title {
+    font-size: 28px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .restaurant-menu .menu-title .card-like {
+    font-size: 24px;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -286,31 +342,20 @@ a {
   text-decoration: none;
 }
 
-.header__container--arrow {
-  padding: 17px;
-  font-size: 30px;
-}
-
 .fonctionnement,
-.menu-entrees,
-.menu-plats,
-.menu-desserts {
+.menu-section {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
 }
 .fonctionnement .fonctionnement__label,
-.menu-entrees .fonctionnement__label,
-.menu-plats .fonctionnement__label,
-.menu-desserts .fonctionnement__label {
+.menu-section .fonctionnement__label {
   font-size: 24px;
   font-weight: bold;
   margin: 20px;
 }
 .fonctionnement .menu__label,
-.menu-entrees .menu__label,
-.menu-plats .menu__label,
-.menu-desserts .menu__label {
+.menu-section .menu__label {
   display: block;
   font-size: 16px;
   margin: 10px;
@@ -319,6 +364,7 @@ a {
   padding-bottom: 5px;
 }
 
+/****** Media queries ***********/
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -356,6 +402,28 @@ a {
   font-size: 10px;
 }
 
+/****** Media queries ***********/
+@media screen and (min-width: 1024px) {
+  .footer-section {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .footer-section .title {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+  }
+  .footer-section .links {
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 50px;
+  }
+  .footer-section ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
 header {
   display: flex;
   flex-direction: column;
@@ -366,6 +434,7 @@ header .header__container {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 header .header__container--arrow {
   display: none;
@@ -374,6 +443,8 @@ header .header__container--arrow {
 header .header__container img {
   width: 40%;
   padding: 14px 70px;
+  display: flex;
+  justify-content: center;
 }
 
 .header-restaurants {
@@ -386,6 +457,22 @@ header .header__container img {
 }
 .header-restaurants .header__container--arrow a {
   color: #353535;
+}
+.header-restaurants img {
+  display: flex;
+  justify-content: center;
+}
+
+/****** Media queries ***********/
+@media screen and (min-width: 1024px) {
+  .header-restaurants .header__container--arrow {
+    display: flex;
+    padding-left: 3px;
+    font-size: 50px;
+  }
+  .header-restaurants img {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
