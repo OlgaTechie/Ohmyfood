@@ -8,6 +8,7 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        width: 100%;
 
         &--arrow {
             display: none;
@@ -15,7 +16,8 @@ header {
         }
     
         img {
-            width: 40%;
+            width: 197px;
+            height: 36px;
             padding: 14px 70px;
         }
     }
@@ -51,6 +53,7 @@ header {
         .header__container--image {
             display: flex;
             justify-content: center;
+            flex: 100%;
         }
 
         img {

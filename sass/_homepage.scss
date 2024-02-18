@@ -104,8 +104,8 @@ form {
             width: 80px;
             color: $green-fontColor;
             background-color: $thirdColor;
-            right: 3%;
-            top: 5%;
+            right: 10px;
+            top: 10px;
         }
 
         img {
@@ -143,11 +143,16 @@ form {
         }
 
         .card-like {
-            position: absolute;
             border: 1px;
-            right: 5%;
+            right: 5px;
             bottom: 40%;
             font-size: 24px;
+            cursor: pointer;     
+            
+            i {
+                right: 20px;
+                bottom: 40px;
+            }
         }
     }
 }
