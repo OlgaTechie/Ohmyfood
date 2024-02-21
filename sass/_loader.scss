@@ -1,7 +1,7 @@
 .loader {
     position: fixed;
     left: 45%;
-    top: 50%;
+    top: 40%;
     z-index: 1;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
@@ -18,5 +18,5 @@
 
   @keyframes fadeOut {
     0% { opacity: 1; }
-    100% { opacity: 0; display: none; }
+    100% { opacity: 0; }
 }

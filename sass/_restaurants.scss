@@ -35,11 +35,6 @@
     }
 }
 
-$menu-entrees-delay: 0.5s;
-$menu-plats-delay: 1.5s;
-$menu-desserts-delay: 2.5s;
-
-
 .menu-entrees {
     animation: appear 0.5s $menu-entrees-delay both;
 }

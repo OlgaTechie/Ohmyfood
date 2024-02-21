@@ -87,36 +87,35 @@
 }
 
 .menu-button-container {
-    overflow: hidden; /* Cacher le débordement */
+    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
 
     .button-container--wrapper {
         display: flex;
         align-items: center;
-        overflow: hidden; /* Cacher le débordement */
-        transition: margin-right 0.3s ease; /* Transition pour le margin-right */
+        overflow: hidden; 
+        transition: margin-right 0.3s ease; 
         position: relative;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
         .button-extension {
             position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
-            width: 59px; 
-            background-color: $thirdColor; 
+            width: 59px;  
             z-index: 0;
             border-radius: 0 15px 15px 0; 
             opacity: 0;
             transition: all 2s;
             display: none;
+            background-color: $thirdColor;
 
             .checkmark {
                 padding: 15px;
                 background-color: $thirdColor;
                 color: white;
                 border: none;
-                border-radius:  0px 15px 15px 0px;
                 position: absolute;
                 font-size: 20px;
                 right: 5px;
@@ -135,8 +134,8 @@
         }
 
         &:hover {
-            overflow: hidden; /* Cacher le débordement */
-            white-space: nowrap; /* Empêcher le texte de se rompre sur plusieurs lignes */
+            overflow: hidden; 
+            white-space: nowrap; 
             text-overflow: ellipsis;
 
             .button-container--price {
@@ -145,7 +144,7 @@
 
             .titre,
             .sous-titre {
-                width: calc(100% - 50px); /* Réduire la largeur du texte */
+                width: calc(100% - 50px); 
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -180,13 +179,16 @@
     .titre {
         font-size: 18px;
         font-weight: bold;
+        overflow: hidden; 
+        white-space: nowrap; 
+        text-overflow: ellipsis;
     }
         
     .sous-titre {
         font-size: 15px;
         padding-top: 5px;
-        overflow: hidden; /* Cacher le débordement */
-        white-space: nowrap; /* Empêcher le texte de se rompre sur plusieurs lignes */
+        overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
     }
    
