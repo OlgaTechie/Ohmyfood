@@ -122,7 +122,6 @@ form {
     .restaurant__card--content {
         display: flex;
         flex-direction: row;
-        position: relative;
         color: black;
 
         .content-txt {
@@ -144,15 +143,10 @@ form {
 
         .card-like {
             border: 1px;
-            right: 5px;
-            bottom: 40%;
+            margin-left: auto;
+            margin-top: 30px;
             font-size: 24px;
             cursor: pointer;     
-            
-            i {
-                right: 20px;
-                bottom: 40px;
-            }
         }
     }
 }

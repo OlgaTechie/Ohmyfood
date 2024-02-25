@@ -1,3 +1,4 @@
+@charset "UTF-8";
 form {
   display: flex;
   justify-content: center;
@@ -110,7 +111,6 @@ form .location .input-field {
 .restaurant__card .restaurant__card--content {
   display: flex;
   flex-direction: row;
-  position: relative;
   color: black;
 }
 .restaurant__card .restaurant__card--content .content-txt {
@@ -129,14 +129,10 @@ form .location .input-field {
 }
 .restaurant__card .restaurant__card--content .card-like {
   border: 1px;
-  right: 5px;
-  bottom: 40%;
+  margin-left: auto;
+  margin-top: 30px;
   font-size: 24px;
   cursor: pointer;
-}
-.restaurant__card .restaurant__card--content .card-like i {
-  right: 20px;
-  bottom: 40px;
 }
 
 /****** Media queries ***********/
@@ -251,39 +247,38 @@ form .location .input-field {
   align-items: center;
   overflow: hidden;
   transition: margin-right 0.3s ease;
-  position: relative;
+  width: 100%;
 }
 .menu-button-container .button-container--wrapper .button-extension {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
   width: 59px;
   z-index: 0;
   border-radius: 0 15px 15px 0;
   opacity: 0;
-  transition: all 2s;
-  display: none;
+  transition: all 0.3s ease;
   background-color: #99E2D0;
+  display: none;
 }
 .menu-button-container .button-container--wrapper .button-extension .checkmark {
   padding: 15px;
-  background-color: #99E2D0;
+  background-color: inherit;
   color: white;
   border: none;
-  position: absolute;
   font-size: 20px;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
   transition: opacity 0.3s ease;
   opacity: 1;
-  z-index: 1;
+}
+.menu-button-container .button-container--wrapper .button-extension ::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #99E2D0;
+  margin-left: auto;
+  margin-right: -59px; /* Espacement de 59px à droite */
+  transition: margin-right 0.3s;
 }
 .menu-button-container .button-container--wrapper .button-container--price {
   margin-left: auto;
   z-index: 1;
-  transition: transform 0.3s ease;
 }
 .menu-button-container .button-container--wrapper:hover {
   overflow: hidden;
@@ -292,6 +287,7 @@ form .location .input-field {
 }
 .menu-button-container .button-container--wrapper:hover .button-container--price {
   transform: translateX(-50px);
+  transition: transform 0.3s ease;
 }
 .menu-button-container .button-container--wrapper:hover .titre,
 .menu-button-container .button-container--wrapper:hover .sous-titre {
@@ -372,21 +368,18 @@ form .location .input-field {
 }
 .restaurant-menu .menu-title {
   display: flex;
-  flex-direction: row;
-  position: relative;
+  align-items: center;
 }
 .restaurant-menu .menu-title .title {
   font-size: 28px;
   padding-left: 17px;
   margin-top: 30px;
+  margin-right: 20px;
 }
 .restaurant-menu .menu-title .card-like {
   font-size: 24px;
   cursor: pointer;
-}
-.restaurant-menu .menu-title .card-like i {
-  right: 50px;
-  bottom: 30px;
+  margin-left: auto;
 }
 
 .menu-entrees {
@@ -431,9 +424,7 @@ form .location .input-field {
   }
   .restaurant-menu .menu-title .card-like {
     font-size: 24px;
-  }
-  .restaurant-menu .menu-title .card-like i {
-    right: 380px;
+    margin-left: 0;
   }
 }
 body {
@@ -471,12 +462,12 @@ a {
   padding-bottom: 5px;
 }
 
-.card-like i {
-  position: absolute;
+.card-like .heart-empty,
+.card-like .heart-full {
+  transition: opacity 0.3s;
 }
 .card-like .heart-full {
   opacity: 0;
-  transition: all 2s;
 }
 .card-like .heart-full:hover {
   opacity: 1;
@@ -602,7 +593,7 @@ header .header__container img {
   z-index: 1;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid #99E2D0;
   width: 80px;
   height: 80px;
   animation: spin 2s linear forwards, fadeOut 1s 1s forwards;

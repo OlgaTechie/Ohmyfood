@@ -37,13 +37,12 @@ a {
 
 .card-like {
     
-    i {
-        position: absolute;
+    .heart-empty,
+    .heart-full {
+        transition: opacity 0.3s;
     }
-    
     .heart-full {
         opacity: 0;
-        transition: all 2s;
     
         &:hover {
             opacity: 1;
