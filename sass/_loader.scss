@@ -29,7 +29,7 @@
   border-top: 16px solid $thirdColor;
   width: 80px;
   height: 80px;
-  animation: spin 3s linear forwards, fadeOut 1.5s 1s forwards;
+  animation: spin 3s linear forwards, fadeOut 0.5s 1.5s forwards;
   }
 
 @keyframes spin {
