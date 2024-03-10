@@ -255,13 +255,15 @@ form .location .input-field {
   overflow: hidden;
   width: 100%;
   background-color: #99E2D0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-button-container .button-container--wrapper .button-extension {
-  width: 59px;
+  width: 0;
   height: 69px;
   background-color: #99E2D0;
-  display: none;
   text-align: center;
+  transition: width 1s;
 }
 .menu-button-container .button-container--wrapper .button-extension .checkmark {
   padding: 22px 14px;
@@ -272,27 +274,23 @@ form .location .input-field {
 .menu-button-container .button-container--wrapper .button-container--price {
   margin-left: auto;
   z-index: 1;
+  transition: transform 0.8s ease;
 }
-.menu-button-container .button-container--wrapper:hover {
+.menu-button-container .button-container--wrapper .menu__button {
+  border-radius: 20px 0 0 20px;
+}
+.menu-button-container .button-container--wrapper .titre,
+.menu-button-container .button-container--wrapper .sous-titre {
+  width: calc(100% - 40px);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu-button-container .button-container--wrapper:hover .button-container--price {
   transform: translateX(-40px);
-  transition: transform 0.8s ease;
-}
-.menu-button-container .button-container--wrapper:hover .menu__button {
-  border-radius: 20px 0 0 20px;
-}
-.menu-button-container .button-container--wrapper:hover .titre,
-.menu-button-container .button-container--wrapper:hover .sous-titre {
-  width: calc(100% - 40px);
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .menu-button-container .button-container--wrapper:hover .button-extension {
+  width: 59px;
   display: inline-block;
   opacity: 1;
   z-index: 1;

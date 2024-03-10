@@ -105,13 +105,15 @@
         overflow: hidden; 
         width: 100%;
         background-color: $thirdColor;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 
         .button-extension {
-            width: 59px; 
+            width: 0; 
             height: 69px; 
             background-color: $thirdColor;
-            display: none;
             text-align: center;
+            transition: width 1s;
     
             .checkmark {
                 padding: 22px 14px;
@@ -123,37 +125,35 @@
  
         .button-container--price {
             margin-left: auto;
-            z-index: 1;  
+            z-index: 1; 
+            transition: transform 0.8s ease; 
+        }
+
+        .menu__button {
+            border-radius: 20px 0 0 20px; 
+        }
+
+        .titre,
+        .sous-titre {
+            width: calc(100% - 40px); 
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
         &:hover {
-            overflow: hidden; 
-            white-space: nowrap; 
-            text-overflow: ellipsis;
-
             .button-container--price {
                 transform: translateX(-40px);
-                transition: transform 0.8s ease;
-            }
-
-            .menu__button {
-                border-radius: 20px 0 0 20px; 
-            }
-
-            .titre,
-            .sous-titre {
-                width: calc(100% - 40px); 
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
             }
 
             .button-extension {
+                width: 59px;
                 display: inline-block;
                 opacity: 1;
                 z-index: 1; 
                 animation: 0.8s progress;
             }
+            
             @keyframes progress{
                 from {
                     margin-right: -10px;
